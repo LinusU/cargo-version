@@ -2,6 +2,8 @@
 name = "cargo-version"
 version = "0.1.1"
 authors = ["Linus Unnebäck <linus@folkdatorn.se>"]
+description = "Create and tag new versions of a cargo package"
+license = "MIT"
 
 [dependencies]
 semver = "0.9.0"
