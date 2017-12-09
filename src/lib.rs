@@ -93,5 +93,16 @@ pub fn create_version(level: BumpLevel) -> Result<(), CargoVersionError> {
         .wait()
         .expect("Failed to create a git commit");
 
+    // 9. Create git tag
+    Command::new("git")
+        .arg("tag")
+        .arg(format!("v{}", next_version))
+        .arg("-am")
+        .arg(format!("🚢 {}", next_version))
+        .spawn()
+        .expect("Failed to create a git tag")
+        .wait()
+        .expect("Failed to create a git tag");
+
     Ok(())
 }
