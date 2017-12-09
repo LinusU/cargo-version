@@ -1,6 +1,6 @@
 [package]
 name = "cargo-version"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Linus Unnebäck <linus@folkdatorn.se>"]
 
 [dependencies]
